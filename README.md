@@ -13,3 +13,11 @@ This page describes to the learner what is an element, examples of elements, voi
 I also created a smiling sun image at the end sending the user some good vibes
 
 Then I went back to the pages for Lessons 1 and 2 to update the link for the user to navigate to Lesson 3. I also edited the alt text for each reward sticker on Lessons 1 and 2 for online screen-readers to avoid reading duplicate alt text. 
+
+5/06/2026 -----------
+I finished the fourth page >> Lesson 4: HTML Headings
+
+This page describes to the learner what is a heading, different types of headings, an important note on headings, how to make headings, and displaying the output to each heading.
+
+I also added a cherry image at the end of my page
+
