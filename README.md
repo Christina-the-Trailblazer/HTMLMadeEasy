@@ -3,6 +3,11 @@ This is a website that will teach beginners only the basics of HTML.
 
 This website was started on January 2nd, 2026 and is made using HTML to show the user what you can make with this tool.
 
+5/20/2026 ----------
+Added Lesson 6 HTML Lists - this lesson is about how to use ordered vs nonordered lists and also the li element for the list elements.
+
+Then, I made a temporary template so I dont have to retype stuff for every page 
+
 5/12/2026 ----------
 Added Lesson 5 HTML Paragraphs and Formatting
 

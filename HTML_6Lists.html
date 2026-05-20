@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+   <!-- head -->
+    <head>
+       <meta charset="UTF-8" />
+       <title>Lesson 6 | HTML MADE EASY </title>
+    </head>
+    
+    
+    <!-- body -->
+    <body>
+       <h1>Lesson 6: HTML Lists</h1>
+       <hr>
+       
+       <!-- learning objectives -->
+       <section>
+           <h2>By the end of this lesson, the learner will Learn:</h2>
+            <ul>
+                <li>What lists are in HTML</li>
+                <li>The difference between ordered and unordered lists</li>
+                <li>How to create lists using the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags</li>
+                <li>Creating a terms and definition list with &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt; </li>
+            </ul>
+        </section>
+        <hr>
+        
+        <section>
+            <!-- section 1: what are lists -->
+            <h3>What are lists?</h3>
+            <p><strong><em>Lists</em></strong> allow you to organize and group related items</p>
+            <p>The <em>purpose</em> of using lists in your HTML website is to make content easier to read.</p>
+            <p>Lists are commonly used for:</p>
+            <ul>
+                <li>Steps</li>
+                <li>Menu and Navagation List for your site (like near the footer)</li>
+                <li>Item collections</li>
+                <li>Bullet Points</li>
+                <li>Ranked Lists (like leaderboards)</li>
+                <li>Glossaries and FAQs (Frequently Asked Questions)</li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <!--section 2: types of lists -->
+            <h3> Types of Lists and the Differences Between Them</h3>
+            <p>There are two different types of lists:</p>
+            <ul>
+                <li>Unordered Lists</li>
+                <li>Ordered Lists</li>
+            </ul>
+            
+            <h3>Unordered Lists:</h3>
+            <ul>
+                <li>Organized in Bullet Points</li>
+                <li>Order Doesnt Matter</li>
+                <li>These are good for non-step information</li>
+            </ul>
+            
+            <h4>Examples:</h4>
+            <ul>
+                <li>Favorite Foods</li>
+                <li>Hobbies</li>
+                <li>Shopping Lists</li>
+                
+            </ul>
+            <p>-----------------------------------------------------------------------------------------</p>
+            
+            <h3>Ordered Lists:</h3>
+            <ul>
+                <li>Uses Numbers instead of Bullet Points</li>
+                <li>Order MATTERS</li>
+                <li>Good for instructions and ratings</li>
+            </ul>
+            
+            <h4>Examples:</h4>
+            <ul>
+                <li>Recipe Steps</li>
+                <li>Directions</li>
+                <li>Song Rankings</li>
+            </ul>
+            
+        </section>
+        
+        <hr>
+        
+        <section>
+            <!--section 3: How to make lists -->
+            <h3>How to Make Lists</h3>
+            <p>Before you choose to make an ordered or unordered list, its important for you to know about &lt;li&gt; or the List Items element</p>
+            
+            <h3>&lt;li&gt; Element</h3>
+            <p>Each list item, no matter ordered or unordered uses these nezted inside</p>
+            <p>The purpose of the &lt;li&gt; Element is to create individual entries within a list</p>
+            <p>In the next examples, I will show how &lt;li&gt; is used in ordered and nonordered lists</p>
+            
+            <h3>Ordered Lists</h3>
+            <p>Use the &lt;ol&gt; tag and inside use the &lt;li&gt; tag </p>
+            <pre><code>
+            &lt;p&gt;How to make a cup of tea:&lt;/p&gt;
+            &lt;ol&gt;
+                &lt;li&gt;Boil the water on your stove&lt;/li&gt;
+                &lt;li&gt;Place a tea bag in a mug&lt;/li&gt;
+                &lt;li&gt;Pour the hot water&lt;/li&gt;
+                &lt;li&gt;Let the tea bag simmer for 3 minutes&lt;/li&gt;
+                &lt;li&gt;Add milk and stir&lt;/li&gt;
+            &lt;/ol&gt;
+            </code></pre>
+            
+            <h4>Result:</h4>
+             
+              <p>How to make a cup of tea:</p> 
+            <ol> 
+                <li>Boil the water on your stove</li> <li>Place a tea bag in a mug</li>
+                <li>Pour the hot water</li> 
+                <li>Let the tea bag simmer for 3 minutes</li> 
+                <li>Add milk and stir</li> 
+            </ol>
+            
+            
+            <h3>Unordered Lists</h3>
+             <p>Use the &lt;ul&gt; tag and inside use the &lt;li&gt; tag </p>
+            <pre><code>
+            &lt;p&gt;Shopping List:&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Eggs&lt;/li&gt;
+                &lt;li&gt;Bread&lt;/li&gt;
+                &lt;li&gt;Milk&lt;/li&gt;
+                &lt;li&gt;Tea&lt;/li&gt;
+                &lt;li&gt;Cheese&lt;/li&gt;
+            &lt;/ul&gt;
+            </code></pre>
+            
+            <h4>Result:</h4>
+            <p>Shopping List:</p>
+            <ul>
+                <li>Eggs</li>
+                <li>Bread</li>
+                <li>Milk</li>
+                <li>Tea</li>
+                <li>Cheese</li>
+            </ul>    
+        </section>
+        
+        <hr>
+        <section>
+          <h3>BONUS: Making a Terms and Definition List</h3>
+          <p>Now that you learned the basics on lists, you can also use lists to make terms and definitions Known as a <strong><em>Description List</em></strong></p>
+      
+          <p>There are three Tags: </p>
+          <li><strong>&lt;dl&gt;</strong> creates the description list</li>
+          <li><strong>&lt;dt&gt;</strong> defines the term</li>
+          <li><strong>&lt;dd&gt;</strong> defines the description or definition</li>
+          
+          
+
+        <h4>Description List Example</h4>
+
+        <pre><code>
+        &lt;dl&gt;
+            &lt;dt&gt;HTML&lt;/dt&gt;
+            &lt;dd&gt;Used to structure webpages&lt;/dd&gt;
+
+            &lt;dt&gt;CSS&lt;/dt&gt;
+            &lt;dd&gt;Used to style webpages&lt;/dd&gt;
+
+            &lt;dt&gt;JavaScript&lt;/dt&gt;
+            &lt;dd&gt;Used to add interactivity to webpages&lt;/dd&gt;
+        &lt;/dl&gt;
+        </code></pre>
+
+        <h4>RESULT:</h4>
+
+        <dl aria-hidden="true">
+            <dt>HTML</dt>
+            <dd>Used to structure webpages</dd>
+
+            <dt>CSS</dt>
+            <dd>Used to style webpages</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Used to add interactivity to webpages</dd>
+        </dl>
+            
+        </section>
+        
+        
+        <section>
+            <!--reward -->
+            <hr>
+            <p>Spreading LOVE !!!!!</p>
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">   
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "heart">   
+            <img src="RewardStickers/heart.png"  width="170" height = "170" alt= "">
+            
+           
+        </section>
+     
+        
+        
+     
+        <!--navigation -->
+        <iframe src="navigationPage.html" width="100%" height="250px" frameborder="0"></iframe>
+        <hr>
+        
+
+     
+      
+      
+    <!-- footer -->
+    <iframe src="footer.html" width="100%" height="104px" frameborder="0" scrolling="no"></iframe>
+    
+   
+        
+        
+        
+    </body>
+</html>
