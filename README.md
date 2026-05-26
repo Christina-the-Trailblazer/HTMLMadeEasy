@@ -3,6 +3,9 @@ This is a website that will teach beginners only the basics of HTML.
 
 This website was started on January 2nd, 2026 and is made using HTML to show the user what you can make with this tool.
 
+5/25/2026 ---------
+Added Lesson 7 HTML Links - This lesson teaches beginners all about the different types of links along woth being able to tell the difference between absolute and relative links.
+
 5/20/2026 ----------
 Added Lesson 6 HTML Lists - this lesson is about how to use ordered vs nonordered lists and also the li element for the list elements.
 

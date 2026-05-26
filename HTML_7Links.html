@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+   <!-- head -->
+    <head>
+       <meta charset="UTF-8" />
+       <title>Lesson #7 | HTML MADE EASY </title>
+    </head>
+    
+    
+    <!-- body -->
+    <body>
+       <h1>Lesson 7: HTML Links</h1>
+       <hr>
+       
+       <!-- learning objectives -->
+    <section>
+    <h2>By the end of this lesson, the learner will learn </h2>
+        <ul>
+            <li>What links are in HTML</li>
+            <li>What the <strong>&lt;a&gt;</strong> tag and the <strong>href</strong> attribute does</li>
+            <li>How to create different links using the &lt;a&gt; tag and the href attribute</li>
+            <li>Whats a target attribute</li>
+            <li>Absolute vs Relative Links</li>
+        </ul>
+     </section>
+       <hr>
+        
+        <section>
+            <!-- section 1: What are links?  -->
+            <h3>What are Links?</h3>
+            <p><strong><em>Links</em></strong> allow users to click from one page to another</p>
+            <p>You can also use links to jump to another document or another section of your page</p>           
+        </section>
+        
+        <hr>
+        
+        
+        <section>
+         <!-- section 2: href -->
+         <h3>The href Attribute and the &lt;a&gt; Tag</h3>
+         
+            <p>The <em><strong>&lt;a&gt;</strong></em> tag defines and creates a hyperlink that will eventually connect one source to another</p>
+         
+            <p>The <strong><em>href</em></strong> attribute specifies the destination of the link</p>
+            
+            <h4>Example</h4>
+            <pre><code>&lt;a href="url"&gt;Text Describing Link - Link title&lt;/a&gt;</code></pre>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <!--section 3: creating different links -->
+            <h3>How to Create Different Links</h3>
+
+            <h4> Making a Basic Link</h4>
+            
+            <p><strong>Code</strong></p>
+            <pre><code>&lt;a href="https://www.google.com"&gt;Link to Google.com&lt;/a&gt;</code></pre>
+            <p><strong>Output</strong></p>
+            <a href="https://www.google.com">Link to Google.com</a>
+            
+            <p>---</p>
+            
+            <h4> Making Links for Images</h4>
+            <p>Just put the img tag inside of a</p>
+            <p>In this example, we will have an image of a morning dove</p>
+            <p>Clicking on the dove will lead to a video of dove noises</p>
+            <p><strong>Code</strong></p>
+            <pre><code>
+    &lt;a href="https://www.youtube.com/shorts/jvZeDgudKfI"&gt;
+        &lt;img 
+            src="https://media.istockphoto.com/id/599899610/photo/mourning-dove.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=aaDf6b-1n4GuJLtl_F4aNP1d2l-45HwsWC94acC2gYY="
+            width="300" 
+            height="200"&gt;
+    &lt;/a&gt;
+             </code></pre>
+           
+            
+            <p><strong>Output</strong></p>
+             <a href="https://www.youtube.com/shorts/jvZeDgudKfI">
+                <img src="https://media.istockphoto.com/id/599899610/photo/mourning-dove.jpg?s=612x612&w=0&k=20&c=aaDf6b-1n4GuJLtl_F4aNP1d2l-45HwsWC94acC2gYY="
+                width="300" height="200">
+            </a>
+            
+            <p>-----</p>
+            <h4>Contact Information</h4>
+            
+            <p><strong>For Emails:</strong></p>
+            <p>Use mailto: inside href</p>
+            <pre><code>&lt;a href="mailto:example@email.com"&gt;Email: example@email.com&lt;/a&gt;</code></pre>
+            <a href="mailto:example@email.com">example@email.com</a>
+            
+            
+            <p><strong>For Phone Numbers:</strong></p>
+            <p>Use tel: inside href </p>
+            <pre><code>&lt;a href="tel:+15551234567"&gt;+1 (555)123-4567&lt;/a&gt;</code></pre>
+             <a href="tel:+15551234567">+1 (555)123-4567</a>
+            
+            <p><strong>For Addresses:</strong></p>
+            <a>Just look for the address on Google or Apple maps and add it inside href</a>
+            <a>In this example, I will do the Grand Canyon in Arizona</a>
+            <pre><code>&lt;a href="https://maps.google.com/?q=Grand+Canyon+Arizona+86052"&gt;Grand Canyon&lt;/a&gt;</code></pre>
+            
+            <a href="https://maps.google.com/?q=Grand+Canyon+Arizona+86052">Grand Canyon</a>   
+            <p>-----</p>
+            
+            <h4>Same Page Navigation</h4>
+            <p>Did you know you can also jump to a specific section on the same page without scrolling!?</p>
+            <p>This is useful for long webpages, menus, tutorials, or navagation sections</p>
+            
+         
+            <p><strong>Code</strong></p>
+            <p>In this example, Im going to have the same plage navigate to the "More Lessons" section at the bottom of my page. </p>
+            
+            <p>On href create your id, start with a # and then create an id name like below:</p>
+            <pre><code>&lt;a href="#navigation"&gt;Go to Navigation Section&lt;/a&gt;</code></pre>
+            <br>
+            
+            <p>Then, in the place you want to navigate to, add your id like so. Make sure the names match: </p>
+            
+                        
+            <pre><code>
+            &lt;iframe src="navigationPage.html" id="navigation" width="100%" height="250px" frameborder="0"&gt;&lt;/iframe&gt;
+            </code></pre>
+
+            <p><strong>Output</strong></p>
+            <p>Try it:</p>
+            <a href="#navigation">Go to Navigation</a>
+
+
+            <p>-----</p>
+            
+            <h4>Internal Links</h4>
+            <p>These are links between the pages of your own website!</p>
+            
+            <p><strong>Code</strong></p>
+            <p>In this website, I have a webpage for HTML elements. In this example, I will show you how to internally link it to this page. </p>
+            
+            <p>In href just add your other HTML page as I did here. You can also do website links</p>
+            
+            <pre><code>&lt;a href="HTML_3Elements.html"&gt;Go to HTML Elements Lesson&lt;/a&gt;</code></pre>
+            
+            <p><strong>Output</strong></p>
+
+            <a href="HTML_3Elements.html">Go to HTML Elements Lesson</a>
+            <p>Since the file in the example ends with .html and is from the same folder as your other html webpages, HTML_3Elements.html is an example of an relative link, which is explained in the next subsection below. </p>
+            
+        </section>
+        <hr>
+        <h3>Absolute vs Relative Links</h3>
+        <h4>Absolute Links</h4>
+        <p>These are href links that show the <em><strong>FULL WEB ADDRESS</strong></em>. This is good for external websites</p>
+        
+        <strong>Code</strong>
+        <pre><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
+        
+        <strong>Output</strong>
+        <br>
+        <a href="https://www.google.com">Google</a>
+       
+       <br><br><br>
+        
+        
+        <h4>Relative Links</h4>
+        <p>Relative Links link to files and pages in your own project</p>
+        <p>You <strong><em>DO NOT NEED</em></strong> the full website URL unlike with absolute links.</p>
+        
+        <strong>Code</strong>
+        <pre><code>&lt;a href="HTML_3Elements.html"&gt;HTML Elements Lesson&lt;/a&gt;</code></pre>
+        
+        <strong>Output</strong>
+        <br>
+        <a href="HTML_3Elements.html">HTML Elements Lesson</a>
+        <hr>
+        
+        <section>
+            <!--reward -->
+            <p>Stay Sweet! Have some Candy!!!!</p>
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250" alt= "candy">
+            <img src="RewardStickers/candy.png"  width="300" height = "250"alt= "candy">
+            
+        
+        </section>
+     
+        
+        
+     
+        <!--navigation -->
+        <iframe src="navigationPage.html"  id= "navigation" width="100%" height="250px" frameborder="0"></iframe>
+        <hr>
+        
+
+     
+      
+      
+    <!-- footer -->
+    <iframe src="footer.html" width="100%" height="104px" frameborder="0" scrolling="no"></iframe>
+    
+   
+        
+        
+        
+    </body>
+</html>
